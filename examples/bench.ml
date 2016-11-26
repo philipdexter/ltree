@@ -54,11 +54,11 @@ let tree_forced =
 
 let () =
   Command.run (Bench.make_command [
-      Bench.Test.create ~name:"vanila build"
+      Bench.Test.create ~name:"vanilla build"
         (fun () -> bt_of_list list);
       Bench.Test.create ~name:"ltree build"
         (fun () -> Ltree.tree_of_list list);
-      Bench.Test.create ~name:"vanila query"
+      Bench.Test.create ~name:"vanilla query"
         (fun () -> query_some (fun tree x -> ignore (bt_lookup tree x); tree) @@ bt_of_list list);
       Bench.Test.create ~name:"ltree query"
         (fun () -> query_some (fun tree x -> let _, tree = Ltree.lookup tree x in tree) @@ Ltree.tree_of_list list);
