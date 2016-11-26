@@ -1,0 +1,8 @@
+true: annot, bin_annot
+".git": -traverse
+".git": not_hygienic
+
+
+<ltree>: include
+
+<examples>: -traverse

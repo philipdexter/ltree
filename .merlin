@@ -1,0 +1,7 @@
+S .
+S ltree
+B _build
+B _build/ltree
+PKG topkg
+PKG core_bench
+PKG core

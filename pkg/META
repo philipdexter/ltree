@@ -1,0 +1,5 @@
+description="A lazy binary search tree"
+version = "0.1.0"
+requires = ""
+archive(byte) = "ltree.cma"
+archive(native) = "ltree.cmxa"
